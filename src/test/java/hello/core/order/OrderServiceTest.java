@@ -28,4 +28,13 @@ class OrderServiceTest {
         Order order = orderService.createOrder(memberId, "itemA", 10000);
         assertThat(order.getDiscountPrice()).isEqualTo(1000);
     }
+
+    /**
+     * 수정자 주입 실패 테스트
+     */
+//    @Test
+//    void createOrder2() {
+//        OrderServiceImpl orderService = new OrderServiceImpl();
+//        orderService.createOrder(1L, "itemA", 10000);
+//    }
 }
